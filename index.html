@@ -9,26 +9,35 @@
 </head>
 
 <body>
-
-    <main class="container">
-        <h1>Calculadora de IMC</h1>
-        <p>Desenvolvido por Gyane</p>
-        <h2>
-            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
-            <br><br> O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada ao quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
-            <br><br> Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices da tabela. Importante: siga os exemplos e use pontos como separadores.
-        </h2> <br>
+    <div class="container" id="container">
+        <div class="imagem">
+            <img src="img/calculadora.png">
+            <div class="texto">
+                <h2> Calculadora de IMC </h2>
+                <p>Desenvolvido por Gyane</p>
+            </div>
+        </div>
+        <h1>
+            IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela Organização Mundial de Saúde para
+            calcular o peso ideal de cada pessoa.
+            <br><br> O índice é calculado da seguinte maneira: divide-se o peso do paciente pela sua altura elevada
+            ao
+            quadrado. Diz-se que o indivíduo tem peso normal quando o resultado do IMC está entre 18,5 e 24,9.
+            <br><br> Quer descobrir seu IMC? Insira seu peso e sua altura nos campos abaixo e compare com os índices
+            da
+            tabela. Importante: siga os exemplos e use pontos como separadores.
+        </h1> <br>
 
         <div class="input-container">
             <label for="alturaEmMetros"> Altura (M)</label>
-            <input type="text" id="altura" name="alturaEmMetros" step="0.01" required><br><br>
+            <input type="text" id="altura" placeholder="Digite aqui" name="alturaEmMetros" step="0.01" required><br><br>
 
             <label for="pesoEmQuilos"> Peso (KG)</label>
-            <input type="text" id="peso" name="pesoEmQuilos" step="0.1" required><br><br>
+            <input type="text" id="peso" placeholder="Digite aqui" name="pesoEmQuilos" step="0.1" required><br><br>
         </div>
         <button type="button" id="calcularIMC">Calcular</button><br><br>
         <p id="resultado"></p>
-        <h2> INTERPRETAÇÃO DO IMC:</h2>
+        <h3> INTERPRETAÇÃO DO IMC:</h3>
 
         <div class="tabela"><br>
             <table>
@@ -68,7 +77,8 @@
                 </tbody>
             </table>
         </div>
-        <script src="script.js"></script>
+    </div>
+    <script src="script.js"></script>
     </main>
 </body>
 
